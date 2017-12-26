@@ -1,0 +1,20 @@
+<div *ngIf="shopsDisplay ; then exist ; else not"></div>
+
+<ng-template #exist>
+  <table border="0" align='center'>
+    <tr *ngFor="let shops of shopsDisplay">
+      <td *ngFor="let shop of shops">
+        <app-shops [PreferedShop]="preferdshop" [shopItem]='shop'></app-shops>
+      </td>
+    </tr>
+  </table>
+</ng-template>
+
+<ng-template #not>
+  <div align="center">
+
+    <h1> No
+      <img src="../../assets/img/Shop.png" alt="Shop" /> Found </h1>
+
+  </div>
+</ng-template>
