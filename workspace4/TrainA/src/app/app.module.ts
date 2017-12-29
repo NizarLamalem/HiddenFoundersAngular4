@@ -8,7 +8,7 @@ import { ShopsComponent } from './shops/shops.component';
 import { PreferdshopsComponent } from './preferdshops/preferdshops.component';
 import { NearByshopsComponent } from './near-byshops/near-byshops.component' ;
 import { MATERIAL_SANITY_CHECKS } from '@angular/material';
-import { HttpClientModule } from '@angular/Common/http';
+import { HttpClientModule } from '@angular/common/http';
 import {ClassesService} from './classes.service';
 import { ShopsListingComponent } from './shops-listing/shops-listing.component' ;
 

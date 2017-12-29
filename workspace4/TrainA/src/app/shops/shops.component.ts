@@ -9,12 +9,26 @@ import { Shop } from '../classes/shop';
 })
 export class ShopsComponent implements OnInit {
   @Input() public shopItem: Shop;
-  @Input() public PreferedShop= false ;
-constructor() {
-}
+  @Input() public PreferedShop = false;
+  public notHidden = true;
+  constructor() {
+  }
 
-ngOnInit() {
+  ngOnInit() {
 
-}
+  }
+  public onLikeClicked(event: MouseEvent): void {
+    console.log(event);
+    this.notHidden = false;
+  }
+
+  public onDisLikeClicked(event: MouseEvent): void {
+    console.log(event);
+    this.notHidden = false;
+  }
+  public onRemoveClicked(event: MouseEvent): void {
+    console.log(event);
+    this.notHidden = false;
+  }
 
 }

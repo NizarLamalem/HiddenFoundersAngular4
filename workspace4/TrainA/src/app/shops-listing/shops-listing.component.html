@@ -3,9 +3,9 @@
 <ng-template #exist>
   <table border="0" align='center'>
     <tr *ngFor="let shops of shopsDisplay">
-      <td *ngFor="let shop of shops">
+      <div *ngFor="let shop of shops">
         <app-shops [PreferedShop]="preferdshop" [shopItem]='shop'></app-shops>
-      </td>
+      </div>
     </tr>
   </table>
 </ng-template>

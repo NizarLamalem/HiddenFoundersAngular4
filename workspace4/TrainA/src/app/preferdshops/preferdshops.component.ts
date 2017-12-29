@@ -8,7 +8,7 @@ import { ClassesService } from '../classes.service';
 })
 export class PreferdshopsComponent implements OnInit {
   public preferedshops = true;
-  dataType = ClassesService.AllShops;
+  dataType = ClassesService.PreferedShops;
   constructor() { }
 
   ngOnInit() {
