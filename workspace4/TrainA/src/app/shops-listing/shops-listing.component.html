@@ -1,13 +1,13 @@
 <div *ngIf="shopsDisplay ; then exist ; else not"></div>
 
 <ng-template #exist>
-  <table border="0" align='center'>
-    <tr *ngFor="let shops of shopsDisplay">
-      <div *ngFor="let shop of shops">
-        <app-shops [PreferedShop]="preferdshop" [shopItem]='shop'></app-shops>
-      </div>
-    </tr>
-  </table>
+  <div align="center">
+    <mat-grid-list cols="4" [rowHeight]="400">
+      <mat-grid-tile *ngFor="let shop of shopsDisplay" [colspan]="1" [rowspan]="1">
+        <app-shops (messageEvent)="onMessageReceieve($event)" [PreferedShop]="preferdshop" [shopItem]='shop'></app-shops>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
 </ng-template>
 
 <ng-template #not>

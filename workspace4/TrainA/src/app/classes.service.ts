@@ -19,11 +19,11 @@ export class ClassesService {
         , 'Nike', 'lamanizar12@gmail.com', 'Kenitra', new Location(20, 34)),
       new Shop('30', 'https://material.angular.io/assets/img/examples/shiba1.jpg'
         , 'Addidas', 'lamanizar12@gmail.com', 'Kenitra', new Location(20, 34)),
-      new Shop('30', 'https://material.angular.io/assets/img/examples/shiba1.jpg'
+      new Shop('40', 'https://material.angular.io/assets/img/examples/shiba1.jpg'
         , 'Addidas', 'lamanizar12@gmail.com', 'Kenitra', new Location(20, 34)),
-      new Shop('30', 'https://material.angular.io/assets/img/examples/shiba1.jpg'
+      new Shop('50', 'https://material.angular.io/assets/img/examples/shiba1.jpg'
         , 'Addidas', 'lamanizar12@gmail.com', 'Kenitra', new Location(20, 34)),
-      new Shop('30', 'https://material.angular.io/assets/img/examples/shiba1.jpg'
+      new Shop('60', 'https://material.angular.io/assets/img/examples/shiba1.jpg'
         , 'Addidas', 'lamanizar12@gmail.com', 'Kenitra', new Location(20, 34))
     ];
   }
@@ -71,4 +71,15 @@ export class ClassesService {
     }
   }
 
+  public dislikeShops() {
+
+  }
+  // Liked Shops
+  public likeShop() {
+
+  }
+  // Removed Shops from The Prefered Area
+  public removeShop() {
+
+  }
 }

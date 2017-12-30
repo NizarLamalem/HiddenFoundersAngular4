@@ -1,22 +1,19 @@
-<td [class.Distance]="true" [class.example-card]="true" *ngIf="notHidden">
-  <mat-card >
-    <mat-card-header>
-      <mat-card-title>{{shopItem.Name}}</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="{{shopItem.Picture}}" alt="Photo of {{shopItem.Name}}" width="200" height="250">
-    <mat-card-actions>
-      <div align="right">
-        <table border="0" align="center">
-          <tr>
-            <!-- Condition about Card Type is it the Prefered One or The Nearby One -->
-            <div *ngIf="PreferedShop; then preferedshops ; else nearByShops"></div>
-          </tr>
-        </table>
-      </div>
-    </mat-card-actions>
-  </mat-card>
-
-</td>
+<mat-card [class.Distance]="true" [class.example-card]="true" *ngIf="notHidden">
+  <mat-card-header>
+    <mat-card-title>{{shopItem.Name}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{shopItem.Picture}}" alt="Photo of {{shopItem.Name}}" width="200" height="250">
+  <mat-card-actions>
+    <div align="right">
+      <table border="0" align="center">
+        <tr>
+          <!-- Condition about Card Type is it the Prefered One or The Nearby One -->
+          <div *ngIf="PreferedShop; then preferedshops ; else nearByShops"></div>
+        </tr>
+      </table>
+    </div>
+  </mat-card-actions>
+</mat-card>
 
 <!-- wich is to show The remove Button or The Like Dislike One -->
 <ng-template #nearByShops>
